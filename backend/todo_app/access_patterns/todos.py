@@ -12,7 +12,7 @@ from aws_lambda_powertools import Logger
 from todo_app.common.logger import custom_logger
 from todo_app.helpers.dynamodb_helper import DynamoDBHelper
 from todo_app.common.enums import DDBPrefixes
-from todo_app.models.todos import TodoModel, TodoModelUpdates
+from todo_app.models.todos import TodoModel
 
 # Initialize DynamoDB helper for item's abstraction
 DYNAMODB_TABLE = os.environ.get("DYNAMODB_TABLE")
