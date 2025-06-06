@@ -173,7 +173,8 @@ class DynamoDBHelper:
             )
             raise error
 
-    def _get_update_params(self, payload: dict):
+    @staticmethod
+    def _get_update_params(payload: dict):
         """
         Given a dictionary we generate an update expression and a dict of values
         to update a dynamodb table.
