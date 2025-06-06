@@ -8,8 +8,7 @@ from aws_cdk import (
     aws_s3,
     aws_s3_deployment,
     RemovalPolicy,
-    Duration,
-)
+    )
 from constructs import Construct
 
 
